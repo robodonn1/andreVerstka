@@ -1,0 +1,11 @@
+.leftHeaderBlock{
+    display: flex;
+    gap: 60px;
+}
+
+.textCatalog{
+    color: rgba(114, 113, 110, 1);
+    font-size: 14px;
+    font-family: inherit;
+    text-decoration: none;
+}
