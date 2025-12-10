@@ -1,0 +1,20 @@
+.filterLineRight {
+    height: 79px;
+    display: flex;
+    align-items: center;
+    gap: 29px;
+
+}
+
+.filterElement {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input{
+    height: 6px;
+    width: 6px;
+}

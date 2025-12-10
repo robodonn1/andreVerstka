@@ -1,0 +1,19 @@
+.midHeaderBlock {
+    display: flex;
+    gap: 36px;
+
+    .link {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        gap: 12px;
+
+        img{
+            height: 16px;
+        }
+
+        p {
+            color: rgba(114, 113, 110, 1);
+        }
+    }
+}
