@@ -32,7 +32,7 @@ function TovarList() {
         <>
             <div className={styles.tovarList}>
                 {data.map(tovar => (
-                    <Tovar imgUrl={tovar.images} name={tovar.name} description={tovar.description} price={ Math.floor(Math.random() * 1000) } />
+                    <Tovar tovar={tovar} price={ Math.floor(Math.random() * 1000) } />
                 ))}
             </div>
         </>
