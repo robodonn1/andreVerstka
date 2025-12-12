@@ -20,6 +20,8 @@ function TovarList() {
                     for (let i = 0; i < res.data.length; i += 12) {
                         datam.push(res.data.slice(i, i + 12));
                     }
+                } else {
+                    datam = [res.data];
                 }
 
                 setData(datam);

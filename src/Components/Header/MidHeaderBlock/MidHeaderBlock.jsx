@@ -8,7 +8,7 @@ function MidHeaderBlock() {
         <>
             <div className={ styles.midHeaderBlock }>
                 <SearchComponent/>
-                <Link to='/constructor' className={styles.link}>
+                <Link to='/creative' className={styles.link}>
                     <img src="/images/divan.svg" alt="constructor" />
                     <p>КОНСТРУКТОР</p>
                 </Link>
