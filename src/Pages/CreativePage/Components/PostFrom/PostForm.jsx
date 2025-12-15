@@ -1,6 +1,7 @@
 import styles from './PostForm.module.css';
 import { useState } from 'react';
 import axios from 'axios';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function PostForm() {
     const [error, setError] = useState("");
@@ -88,10 +89,19 @@ function PostForm() {
         }
     };
 
+    const customTransition = {
+        duration: 2,
+        ease: [0.000, 1.650, 0.450, 1.070],
+    };
+
+    const fadeIn = {
+        hidden: { scale: 0, y: -120 },
+        visible: { scale: 1, y: 0, transition: customTransition }
+    };
 
     return (
         <>
-            <form className={styles.postForm} onSubmit={handleSubmit} encType='multipart/form-data'>
+            <motion.form variants={fadeIn} initial="hidden" animate="visible" className={styles.postForm} onSubmit={handleSubmit} encType='multipart/form-data'>
                 <input type="text" placeholder='Название товара' value={formData.name} name='name' onChange={handleInputChange} required />
                 <input type="text" placeholder='Описание товара' value={formData.description} name='description' onChange={handleInputChange} required rows="4" />
              
@@ -113,7 +123,7 @@ function PostForm() {
                 )}
 
                 <button disabled={isSumbiting}>Сохранить</button>
-            </form>
+            </motion.form>
         </>
     );
 }

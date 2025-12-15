@@ -10,12 +10,4 @@
         font-size: 50px;
         transition: all 0.5s;
     }
-
-    &>h1:hover {
-
-        width: 60%;
-        rotate: -9deg;
-        font-size: 54px;
-
-    }
 }
